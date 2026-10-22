@@ -1,7 +1,4 @@
-
 """Module for managing students and their grades."""
-
-
 class Student:
     """Represents a student and their grades."""
 
@@ -14,7 +11,6 @@ class Student:
             self.is_passed = "NO"
             self.honor = "?"
             self.letter_grade = ""
-           
         else:
             print("Missing parameters: 'student_id' and 'name'")
 
@@ -46,6 +42,7 @@ class Student:
         return avg
 
     def check_passed(self):
+        """check if the student passed or failed"""
         if self.calc_average() >= 60:
             self.is_passed = "Passed"
         else:
